@@ -28,6 +28,7 @@
 .title {
   color: #fff;
   display: flex;
+  cursor:pointer;
   justify-content: space-between;
   align-items: center;
 }

@@ -20,7 +20,6 @@ const Accordion = () => {
     if (currentIndex === -1) copyMultiple.push(id);
     else copyMultiple.splice(currentIndex, 1);
     setMultiSelected(copyMultiple);
-    console.log("selected and multi selected: ", copyMultiple);
   }
   return (
     <div className="wrapper">
