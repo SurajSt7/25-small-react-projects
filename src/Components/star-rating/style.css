@@ -1,4 +1,12 @@
-.star {
-  display: flex;
-  background: white;
+.active {
+  color: #ffd700;
+  font-size: xx-large;
+  display: inline-block;
+  cursor: context-menu;
+}
+.inactive {
+  color: black;
+  font-size: xx-large;
+  display: inline-block;
+  cursor: context-menu;
 }
