@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
+
 const RandomColors = () => {
-  const [colorType, setColorType] = useState("HEX");
-  const [color, setColor] = useState("");
+  const [colorType, setColorType] = useState<string>("HEX");
+  const [color, setColor] = useState<string>("");
 
   function generateRandomColor() {
     if (colorType === "HEX") {
@@ -31,7 +32,9 @@ const RandomColors = () => {
       <button>Generate Random Colors</button>
       <button onClick={() => setColorType("HEX")}>Create HEX Color</button>
       <button onClick={() => setColorType("RGB")}>Create RGB Color</button>
-      <p className="color">{colorType === "HEX" ? "HEX Colors" : "RGB Color"}</p>
+      <p className="color">
+        {colorType === "HEX" ? "HEX Colors" : "RGB Color"}
+      </p>
       <p className="color">{color}</p>
     </div>
   );
